@@ -1,0 +1,14 @@
+Pngtricks is a small selection of scripts for working with png files. These
+were originally written to understand and then reproduce PNG images that
+produced fundamentally different output when viewed in different programs.
+
+It turned out that this effect was a result of extreme values in aGAMA chunks,
+which currently (2007-03-18) appear to be ignored by most common non-webbrowser
+applications for image display purposes, but are honored by the common 
+graphical webbrowsers.
+
+schroedipnger.py is a script that duplicates this effect given two input
+images; note that the result will have the size of an intersection of the
+two images, and the actual quality will depend heavily on how exactly the 
+original images looked. In general, large areas of similar colors seem to favor
+the production of visual artifacts.
